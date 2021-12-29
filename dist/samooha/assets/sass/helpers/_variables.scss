@@ -1,0 +1,72 @@
+/*---------------------------
+	Fonts
+----------------------------*/
+@font-face {
+	font-family: 'Larsseit';
+	src: url(../../fonts/web-fonts/larsseit-thin.otf) format('truetype');
+	font-weight: 200;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Larsseit';
+	src: url(../../fonts/web-fonts/larsseit-light.otf) format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Larsseit';
+	src: url(../../fonts/web-fonts/larsseit.otf) format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Larsseit';
+	src: url(../../fonts/web-fonts/larsseit-medium.otf) format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Larsseit';
+	src: url(../../fonts/web-fonts/larsseit-bold.otf) format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Larsseit';
+	src: url(../../fonts/web-fonts/larsseit-extrabold.otf) format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}
+
+// @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;900&display=swap');
+// $base-font: 'Lato', sans-serif;
+
+// fonts
+$base-font-size: 24;
+$base-font: 'Larsseit', sans-serif;
+
+
+
+// color
+$dark-gray: #2a2a2a;
+$white: #fff;
+$black: #000;
+$red: #FF403F;
+$blue: #1c364d;
+$dark-blue: #2b2d42;
+$mix-blue: #8d99ae;
+
+$theme-primary-color: $blue;
+$theme-secondary-color: $mix-blue;
+$body-bg-color: #f2f0f0;
+$section-bg-color: #edecec;
+$text-color: $dark-blue;
+$heading-color: $dark-blue;
+
+
+

@@ -1,0 +1,123 @@
+// helpers
+@import "../../src/assets/sass/helpers/variables";
+
+.main-body{
+  min-height: 100vh;
+}
+/**
+   * The other theme for this menu
+   */
+.circular-menu {
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+
+  &.whatsapp{
+    bottom: 4em;
+    .floating-btn{
+      background-color: #4FCE5D;
+    }
+  }
+
+  .floating-btn {
+    display: block;
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 50%;
+    background-color: $red;
+    box-shadow: 0 2px 5px 0 hsla(0, 0%, 0%, .26);
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    outline: 0;
+
+    &:active {
+      box-shadow: 0 4px 8px 0 hsla(0, 0%, 0%, .4);
+    }
+
+    i {
+      font-size: 1.3em;
+      transition: transform .2s;
+    }
+  }
+
+  &:after {
+    display: block;
+    content: ' ';
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -2;
+    background-color: darken($blue, 4%);
+    transition: all .3s ease;
+  }
+
+  .items-wrapper {
+    padding: 0;
+    margin: 0;
+  }
+
+  .menu-item {
+    position: absolute;
+    top: .2em;
+    right: .2em;
+    z-index: -1;
+    display: block;
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    font-size: 1em;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 3;
+    background-color: hsla(0, 0%, 0%, .1);
+    transition: transform .3s ease, background .2s ease;
+
+    &:hover {
+      background-color: $red;
+    }
+  }
+}
+
+.circular-menu.active {
+  .floating-btn {
+    box-shadow: inset 0 0 3px hsla(0, 0%, 0%, .3);
+
+    i {
+      transform: rotate(-45deg);
+    }
+  }
+
+  &:after {
+    transform: scale3d(5.5, 5.5, 1);
+    transition-timing-function: cubic-bezier(.68, 1.55, .265, 1);
+  }
+
+  .menu-item {
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    &:nth-child(1) {
+      transform: translate3d(9px, -118px, 0);
+    }
+
+    &:nth-child(2) {
+      transform: translate3d(-56px, -100.8px, 0);
+    }
+
+    &:nth-child(3) {
+      transform: translate3d(-104px, -51.2px, 0);
+    }
+
+    &:nth-child(4) {
+      transform: translate3d(-112px, 16px, 0);
+    }
+  }
+}

@@ -1,0 +1,118 @@
+.theme-btn {
+	background-color: $theme-secondary-color;
+	font-size: 14px;
+	font-size: calc-rem-value(14);
+	font-weight: 500;
+	color: $white;
+	padding: 20px 35px;
+	@include rounded-border(0);
+	text-transform: uppercase;
+	position: relative;
+	z-index: 1;
+	letter-spacing: 1px;
+    display: inline-block;
+    margin: 15px;
+    text-align: center;
+    text-decoration: none;
+    border: 3px solid $theme-secondary-color;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+
+
+	@include media-query(991px) {
+		font-size: 12px;
+		font-size: calc-rem-value(12);
+		padding: 17px 25px;
+	}
+
+
+	@include media-query(767px) {
+		font-size: 12px;
+		font-size: calc-rem-value(12);
+		padding: 17px 20px;
+	}
+
+
+	&:hover,
+	&:focus,
+	&:active {
+		background-color: darken($theme-primary-color, 5%);
+		color: $white;
+		border: 3px solid $blue;
+	}
+	&::after,
+	&::before {
+		position: absolute;
+		content: "";
+		width: 0;
+		height: 0;
+		transition: .5s;
+	}
+	&::after {
+		top: -9px;
+		left: -9px;
+		border-top: 3px solid transparent;
+		border-left: 3px solid transparent;
+	}
+	&::before {
+		bottom: -9px;
+		right: -9px;
+		border-bottom: 3px solid transparent;
+		border-right: 3px solid transparent;
+	}
+	&:hover::after,
+	&:hover::before {
+		width: calc(100% + 17.5px);
+		height: calc(100% + 17.5px);
+		border-color: $blue;
+	}
+}
+
+.theme-btn-s2 {
+	@extend .theme-btn;
+	background-color: $white;
+	border-color: $white;
+	color: $heading-color;
+}
+
+.theme-btn-s3 {
+	@extend .theme-btn;
+	background-color: $mix-blue;
+	border-color: $theme-primary-color !important;
+	color: $white;
+
+	&:hover,
+	&:focus,
+	&:active {
+		background-color: $white;
+		color: $theme-primary-color;
+		border: 3px solid $blue;
+	}
+	
+	&:hover::after,
+	&:hover::before {
+		width: calc(100% + 17.5px);
+		height: calc(100% + 17.5px);
+		border-color: $white;
+	}
+}
+
+.view-cart-btn,
+.checkout-btn {
+	@extend .theme-btn;
+	background-color: $black;
+	padding: 12px 35px;
+	display: block;
+	font-size: 12px;
+	font-size: calc-rem-value(12);
+	font-weight: 400;
+
+	&:hover {
+		background-color: $theme-primary-color;
+	}
+}
+
+.checkout-btn {
+	background-color: #545454;
+	margin-top: 10px;
+}

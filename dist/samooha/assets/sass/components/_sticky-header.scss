@@ -1,0 +1,25 @@
+.site-header .sticky-header {
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: -200px;
+	z-index: 9999;
+	opacity: 0;
+	@include transition-time(0.7s);
+	background: white;
+    box-shadow: 0 8px 15px rgb(0 0 0 / 5%);
+}
+
+.site-header .sticky-on {
+	background: $white;
+	opacity: 1;
+	top: 0;
+}
+
+.sticky-header .mini-cart-content {
+	display: none;
+}
+
+.site-header .sticky-on .mini-cart-content {
+	display: block;
+}

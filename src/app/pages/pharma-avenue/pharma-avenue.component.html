@@ -1,0 +1,501 @@
+<div class="page-wrapper" id="page-top">
+
+    <header id="header" class="site-header header-style-1">
+        <nav class="navigation navbar navbar-expand-lg navbar-light sticky-header sticky-on">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggler open-btn" (click)="openSideNav = true">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar first-angle"></span>
+                        <span class="icon-bar middle-angle"></span>
+                        <span class="icon-bar last-angle"></span>
+                    </button>
+                    <a class="navbar-brand" routerLink="/home"><img src="assets/images/logo.svg" alt></a>
+                </div>
+                <!-- end of nav-collapse -->
+    
+                <div class="header-right d-flex">
+                    <div id="navbar" class="collapse navbar-collapse navigation-holder" [ngClass]="{'slideInn':openSideNav}">
+                        <button class="close-navbar"><i class="samooha-icon-close" (click)="openSideNav = false"></i></button>
+                        <ul class="nav navbar-nav me-auto mb-2 mb-lg-0">
+                            <li><a class="nav-item nav-link active" href="#page-top">Home <span class="sr-only">(current)</span></a></li>
+                            <li><a class="nav-item nav-link" href="#about">About</a></li>
+                            <li><a class="nav-item nav-link" href="#features">Venture Highlights</a></li>
+                            <li><a class="nav-item nav-link" href="#location">Location</a></li>
+                            <li><a class="nav-item nav-link" href="#contact">Contact</a></li>
+                            <span class="divider"></span>
+                            <li><a class="nav-info btn btn-primary btn-framed" href="https://wa.me/919959108211?text=I'm%20interested%20in%20buying%20a%20plot,%20could%20you%20please%20guide%20me%20further..." target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i> Chat with Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div><!-- end of container -->
+        </nav>
+    </header>
+    <!--end hero-->
+
+    <div id="content">
+
+        <section class="main-banner"> 
+            <div class="slide">
+                <img src="assets/img/slide-01.jpg" class="main-slide" width="100%" alt="">
+                <img src="assets/img/mobile-slide.jpg" class="mobile-slide" width="100%" alt="">
+
+                <div class="hero__caption has-dark-background">
+                        <h1>Invest amidst the proposed pharma city</h1>
+                        <app-feedback-form></app-feedback-form>
+                        <hr>
+                        <p>An exclusive plotted development near Hyderabad Pharma City. An Investment that continuously appreciates in value.</p>
+                    </div>
+            </div>
+        </section>
+        <section class="block about-us" id="about">
+            <div class="container">
+                <div class="block__wrapper">
+                    <div class="block__title text-center">
+                        <h2>Praposed Projects Near Pharma Avenue</h2>
+                    </div>
+                    <!--end block-title-->
+
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                            <a class="box box--image box--image--full-image" >
+                                <div class="box__wrapper">
+                                    <div class="box__header">
+                                        <div class="box__image img-into-bg">
+                                            <img src="assets/img/pharma-city-1.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="box__content">
+                                        <h4>Hyderabad Pharma City</h4>
+                                        <h5>Just 300mtrs</h5>
+                                    </div>
+                                </div>
+                                <!--end box__wrapper-->
+                            </a>
+                            <!--end box-image-->
+                        </div>
+                        <!--end col-xl-4-->
+
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                            <a class="box box--image box--image--full-image">
+                                <div class="box__wrapper">
+                                    <div class="box__header">
+                                        <div class="box__image img-into-bg">
+                                            <img src="assets/img/amazon-1.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="box__content">
+                                        <h4>Amazon Data Center </h4>
+                                        <h5>Near to</h5>
+                                    </div>
+                                </div>
+                                <!--end box__wrapper-->
+                            </a>
+                            <!--end box-image-->
+                        </div>
+                        <!--end col-xl-4-->
+
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 offset-md-3 offset-lg-0">
+                            <a class="box box--image box--image--full-image">
+                                <div class="box__wrapper">
+                                    <div class="box__header">
+                                        <div class="box__image img-into-bg">
+                                            <img src="assets/img/aerospace-1.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="box__content">
+                                        <h4>Yeliminedu Aerospace </h4>
+                                        <h5>Close to</h5>
+                                    </div>
+                                </div>
+                                <!--end box__wrapper-->
+                            </a>
+                            <!--end box-image-->
+                        </div>
+                        <!--end col-xl-4-->
+
+                    </div>
+                    <!--end row-->
+                </div>
+                <!--end block__wrapper-->
+            </div>
+            <!--end container-->
+
+        </section>
+
+        <section class="block why-us" id="text-image-block">
+            <div class="container">
+                <div class="block__wrapper">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="text-align-right push-down">
+                                <h2 data-scroll-reveal="enter left and move 10px">Why You Should Choose Samooha</h2>
+                                <ul data-scroll-reveal="enter left and move 10px after 0.1s"  class="list-style">
+                                    <li>Trusted Properties -</li>
+                                    <li>High Return on Investments -</li>
+                                    <li>High Growth Property Locations -</li>
+                                    <li>Well Experiennced Team -</li>
+                                    <li>On time Property Handover -</li>
+                                    <li>State of the art Aminities -</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <img class="width-100 shadow rounded-corners" src="assets/img/samooha-golden-gate.jpg" alt="">
+                        </div>
+                    </div>
+                    <!--end row-->
+                    
+                    <!--end background-->
+                </div>
+                <!--end block__wrapper-->
+            </div>
+            <!--end container-->
+        </section>
+
+        <section class="block project-info" id="blockquote">
+            <div class="container">
+                <div class="block__wrapper">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul class="list list--text list--dashed">
+                                <li data-scroll-reveal="enter bottom and move 10px">
+                                    <h5 class="opacity-50"><strong>Offer Price</strong></h5>
+                                    <h4><i class="fa fa-inr" aria-hidden="true"></i> 7,999 /- Per Sq Yard</h4>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-6">
+                            <ul class="list list--text list--dashed">
+                                <li data-scroll-reveal="enter bottom and move 10px">
+                                    <h5 class="opacity-50"><strong>Location</strong></h5>
+                                    <h4><i class="fa fa-map-marker" aria-hidden="true"></i> Nandiwanaparthy</h4>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-6">
+                            <ul class="list list--text list--dashed">
+                                <li data-scroll-reveal="enter bottom and move 10px">
+                                    <h5 class="opacity-50"><strong>Market Price</strong></h5>
+                                    <h4><i class="fa fa-inr" aria-hidden="true"></i> 10,500 /- Per Sq Yard</h4>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-6">
+                            <ul class="list list--text list--dashed">
+                                <li data-scroll-reveal="enter bottom and move 10px">
+                                    <h5 class="opacity-50"><strong>Plot Sizes</strong></h5>
+                                    <h4><i class="fa fa-clone" aria-hidden="true"></i> From 167 to 200 Sq Yards</h4>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--end block__wrapper-->
+            </div>
+            <!--end container-->
+        </section>
+
+        <section class="block" id="features">
+            <div class="container">
+                <div class="block__wrapper">
+                    <div class="block__title">
+                        <h2>Venture Highlights</h2>
+                    </div>
+                    <!--end block-title-->
+                </div>
+                <!--end block__wrapper-->
+            </div>
+            <!--end container-->
+            
+            <div class="container">
+                <div class="owl-carousel carousel-gallery" data-owl-items="5" data-owl-dots="1" data-owl-nav="1">
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a class="carousel-gallery__image popup-image">
+                                <div class="img-into-bg">
+                                    <img src="assets/img/road.jpg" alt="">
+                                    <div class="textoverlay">
+                                        <p>60, 40, 33 ft Black Top Roads</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <a class="carousel-gallery__image popup-image">
+                                <div class="img-into-bg">
+                                    <img src="assets/img/park.jpg" alt="">
+                                    <div class="textoverlay">
+                                        <p>Parks</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <a class="carousel-gallery__image popup-image">
+                                <div class="img-into-bg">
+                                    <img src="assets/img/samooha-arch.jpg" alt="">
+                                    <div class="textoverlay">
+                                        <p>Entrance Gate with Arch</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <a class="carousel-gallery__image popup-image">
+                                <div class="img-into-bg">
+                                    <img src="assets/img/under-ground.jpg" alt="">
+                                    <div class="textoverlay">
+                                        <p>Underground Drainage</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <a class="carousel-gallery__image popup-image">
+                                <div class="img-into-bg">
+                                    <img src="assets/img/landscape.jpg" alt="">
+                                    <div class="textoverlay">
+                                        <p>Avenue Plantation</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <a class="carousel-gallery__image popup-image">
+                                <div class="img-into-bg">
+                                    <img src="assets/img/100ft-road.jpg" alt="">
+                                    <div class="textoverlay">
+                                        <p>Proposed 100Feet Road Facing</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                   
+                    
+                    
+                    
+                    
+                    
+    
+                </div>
+            </div>
+            <!--end background-->
+        </section>
+
+        <section class="block" id="location">
+            <div class="container">
+                <div class="">
+                    <div class="block__title">
+                        <h2>Location</h2>
+                        <h3>Where You'll Be Living</h3>
+                    </div>
+                    <!--end block-title-->
+                    <div class="map-wrapper">
+                        
+                        <div class="height-500px">
+                            <img src="assets/images/projects/pharma-avenue.jpg" width="100%" alt="">
+                        </div>
+                    </div>
+                    <!--end map-wrapper-->
+                </div>
+                <!--end block__wrapper-->
+            </div>
+            <!--end container-->
+        </section>
+
+        <section class="block" id="contact">
+            <div class="container">
+                <div class="block__wrapper">
+                    <div class="block__title">
+                        <h2>Contact</h2>
+                    </div>
+                    <!--end block-title-->
+                    <div class="row">
+                        <div class="col-xl-5 col-lg-6 col-md-12 col-sm-12">
+                            <div class="person">
+                                <div class="person__image">
+                                    <div class="img-into-bg">
+                                        <img src="assets/img/samooha-logo.png" width="100" alt="">
+                                    </div>
+                                </div>
+                                <div class="person__description">
+                                    <figure>
+                                        <label>Phone:</label>
+                                        <div>+91 99591 08211</div>
+                                    </figure>
+                                    <figure>
+                                        <label>E-mail:</label>
+                                        <div>
+                                            <a href="mailto:info@samoohaprojects.com">info@samoohaprojects.com</a>
+                                        </div>
+                                    </figure>
+                                    <figure>
+                                        <label>Office:</label>
+                                        <div>Plot No-18, Flat No-301, Srinidhi Nest Apartment, Beside SBI Bank, Whitefields, Kondapur, Ranga Reddy, Telangana, 500084</div>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-7 col-lg-6 col-md-12 col-sm-12">
+                            <!-- <form action="assets/php/contact.php" id="form-contact" method="post" class="form clearfix">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6">
+                                        <div class="form-group">
+                                            <label for="form-contact-name">Your Name</label>
+                                            <input type="text" class="form-control" id="form-contact-name" name="name" placeholder="Your Name" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6">
+                                        <div class="form-group">
+                                            <label for="form-contact-email">Your Email</label>
+                                            <input type="email" class="form-control" id="form-contact-email" name="email" placeholder="Your Email" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="form-contact-message">Your Message</label>
+                                            <textarea class="form-control" id="form-contact-message" rows="8" name="message" placeholder="Your Message" required></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group clearfix">
+                                    <button type="submit" class="btn pull-right btn-primary btn-framed" id="form-contact-submit">Send a Message</button>
+                                </div>
+                                <div class="form-contact-status"></div>
+                            </form> -->
+                            <!--end form-contact -->
+                            <app-feedback-form></app-feedback-form>
+                        </div>
+                        <!--end col-xl-7-->
+                    </div>
+                    <!--end row-->
+                </div>
+                <!--end block__wrapper-->
+            </div>
+            <!--end container-->
+            <div class="background-wrapper">
+                <div class="background background--image background--repeat-repeat opacity-50">
+                    <img src="assets/img/pattern-dot.png" alt="">
+                </div>
+            </div>
+            <!--end background-->
+        </section>
+
+    </div>
+
+    <footer id="footer">
+        <div class="container">
+            <span>© Copyright 2021. All rights reserved with Samooha Projects Pvt Limited.</span>
+        </div>
+    </footer>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="pharma" tabindex="-1" role="dialog" aria-labelledby="modal-feature-label" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal__title">
+                    <h2>Hyderabad Pharma City</h2>
+                </div>
+                <div class="owl-carousel modal__carousel" data-owl-items="1" data-owl-autoplay="1" data-owl-dots="0" data-owl-nav="0" data-owl-loop="1">
+                    <div class="slide img-into-bg">
+                        <img src="assets/img/pharma-city.jpg" alt="">
+                    </div>
+                </div>
+                <!--end modal__slider-->
+            </div>
+            <!--end modal-header-->
+            <div class="modal-body">
+                <div class="width-100">
+                    <h4>Hyderabad Pharma City</h4>
+                    <p class="text-justify">Hyderabad Pharma City, is the "world’s largest pharmaceuticals industrial park" being established near Hyderabad, India by the Government of Telangana. Spread over 19,000 acres, the Park is touted to be biggest of its kind industrial cluster for the pharmaceuticals, acting as a one-stop solution for pharmaceutical companies in manufacturing and development needs.</p>
+                </div>
+                <!--end float-left-->
+
+            </div>
+            <!--end modal-body-->
+        </div>
+        <!--end modal-content-->
+    </div>
+    <!--end modal-dialog-->
+</div>
+
+<div class="modal fade" id="amazon" tabindex="-1" role="dialog" aria-labelledby="modal-feature-label" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal__title">
+                    <h2>Amazon Data Center</h2>
+                </div>
+                <div class="owl-carousel modal__carousel" data-owl-items="1" data-owl-autoplay="1" data-owl-dots="0" data-owl-nav="0" data-owl-loop="1">
+                    <div class="slide img-into-bg">
+                        <img src="assets/img/amazon.jpg" alt="">
+                    </div>
+                </div>
+                <!--end modal__slider-->
+            </div>
+            <!--end modal-header-->
+            <div class="modal-body">
+                <div class="width-100">
+                    <h4>Amazon Data Center</h4>
+                    <p class="text-justify">E-commerce major Amazon, a leader in cloud computing service with its Amazon Web Services (AWS), is considering setting up two data centres near Hyderabad with a total investment of ₹11,630 crore (around $1.6 billion). One of the data centres is being proposed with an investment of ₹5,809 crore on over 48 acres (1,94,293 sq metres) in Meerkhanpet village under Kandukur mandal in neighbouring Rangareddy district.</p>
+                </div>
+                <!--end float-right-->
+            </div>
+            <!--end modal-body-->
+        </div>
+        <!--end modal-content-->
+    </div>
+    <!--end modal-dialog-->
+</div>
+
+<div class="modal fade" id="yeliminedu" tabindex="-1" role="dialog" aria-labelledby="modal-feature-label" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal__title">
+                    <h2>Yeliminedu Aerospace</h2>
+                </div>
+                <div class="owl-carousel modal__carousel" data-owl-items="1" data-owl-autoplay="1" data-owl-dots="0" data-owl-nav="0" data-owl-loop="1">
+                    <div class="slide img-into-bg">
+                        <img src="assets/img/aerospace.jpg" alt="">
+                    </div>
+                </div>
+                <!--end modal__slider-->
+            </div>
+            <!--end modal-header-->
+            <div class="modal-body">
+                <div class="width-100">
+                    <h4>Yeliminedu Aerospace</h4>
+                    <p class="text-justify">500 acres has been provided at Eliminedu in Ibrahimpatnam for setting up another aerospace park while two more parks will come up on the outskirts of the city here around the Outer Ring Road.
+                        Hyderabad has emerged as a major aerospace hub with several global aerospace companies and original equipment manufacturers, including the Lockheed Martin Corporation, GE Aviation and Safran, having established their plants in the city.
+                    </p>
+                </div>
+                <!--end float-left-->
+                
+            </div>
+            <!--end modal-body-->
+        </div>
+        <!--end modal-content-->
+    </div>
+    <!--end modal-dialog-->
+</div>
+<!--end modal-->

@@ -1,0 +1,24 @@
+<app-header [currentRoute]="currentRoute" *ngIf="currentRoute !== '/pharma-avenue' && showMicroSite"></app-header>
+<div class="main-body">
+  <router-outlet></router-outlet>
+</div>
+<app-footer *ngIf="currentRoute !== '/pharma-avenue' && showMicroSite"></app-footer>
+
+
+<!-- <div class="circular-menu whatsapp">
+  <a class="floating-btn" href="https://wa.me/917780698936?text=I'm%20interested%20in%20buying%20a%20plot,%20could%20you%20please%20guide%20me%20further..." target="_blank" >
+    <i class="samooha-icon-whatsapp"></i>
+  </a>
+</div> -->
+
+<div id="circularMenu" class="circular-menu" *ngIf="currentRoute !== '/pharma-avenue' && showMicroSite">
+  <a class="floating-btn" onclick="document.getElementById('circularMenu').classList.toggle('active');">
+    <i class="samooha-icon-heart"></i>
+  </a>
+  <menu class="items-wrapper">
+    <a href="https://www.facebook.com/SamoohaProjectsofficial" class="menu-item samooha-icon-facebook"></a>
+    <a href="https://twitter.com/SamoohaOfficial " class="menu-item samooha-icon-twitter"></a>
+    <a href="https://www.linkedin.com/company/samooha-projects-official/" class="menu-item samooha-icon-linkedin"></a>
+    <a href="https://www.instagram.com/samoohaprojectsofficial/" class="menu-item samooha-icon-instagram"></a>
+  </menu>
+</div>

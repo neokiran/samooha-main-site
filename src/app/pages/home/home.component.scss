@@ -1,0 +1,15 @@
+@import "~swiper/swiper";
+@import "~swiper/components/navigation/navigation";
+.modal-body{
+    ::ng-deep .contact-form{
+        .contact-validation-active {
+            input{
+                margin-bottom: 8px;
+            }
+        }
+    }
+}
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+  }

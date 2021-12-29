@@ -1,0 +1,625 @@
+<!-- start preloader -->
+<div class="preloader" *ngIf="showPreLoader">
+  <div class="loader">Loading...</div>
+</div>
+<!-- end preloader -->
+<!-- start page-wrapper -->
+<div class="page-wrapper">
+
+  <div class="body-overlay"></div>
+
+  <!-- start preloader -->
+  <!-- <div class="preloader">
+        <div class="loader">Loading...</div>
+    </div> -->
+  <!-- end preloader -->
+
+  <!-- <swiper [navigation]="true" class="hero-slider">
+        <ng-template swiperSlide>
+            <section class="hero-area">
+                <div class="glass-effect"></div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col col-xs-12">
+                            <div class="content-area">
+                                <div class="hero-conent">
+                                    <h2>The <br>Right <span>Strategy</span></h2>
+                                    <a href="#" class="theme-btn">Get free consultant</a>
+                                </div>
+                                <div class="hero-pic slide-bg-image" data-background="assets/images/hero/img-1.jpg" style="background-image: url(&quot;assets/images/hero/img-1.jpg&quot;);">
+                                    <img src="assets/images/hero/img-1.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </section>
+        </ng-template>
+        <ng-template swiperSlide>
+            <div class="slide-inner slide-bg-image" style="background-image: url('../assets/images/slider/slide-1.jpg')">
+                <div class="container">
+                    <div class="row">
+                        <div class="col col-xxl-10 offset-xxl-1">
+                            <div data-swiper-parallax="300" class="slide-title">
+                                <h2><span>no rules 2</span><span>make legacy</span></h2>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div data-swiper-parallax="500" class="slide-btns">
+                                <a href="#" class="theme-btn-s3">Get free consultant</a> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ng-template>
+        <ng-template swiperSlide>
+            <div class="slide-inner slide-bg-image" style="background-image: url('../assets/images/slider/slide-1.jpg')">
+                <div class="container">
+                    <div class="row">
+                        <div class="col col-xxl-10 offset-xxl-1">
+                            <div data-swiper-parallax="300" class="slide-title">
+                                <h2><span>no rules 3</span><span>make legacy</span></h2>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div data-swiper-parallax="500" class="slide-btns">
+                                <a href="#" class="theme-btn-s3">Get free consultant</a> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ng-template>
+        <div class="fun-fact">
+            <h5>20k</h5>
+            <p>Services provided!</p>
+        </div>
+    </swiper> -->
+
+  <section class="hero-area-s2">
+    <!-- <div class="glass-effect"></div> -->
+    <div class="container">
+      <div class="row">
+        <div class="col col-xs-12">
+          <div class="content-area">
+            <div class="hero-conent text-center">
+              <h2>BEST LOCATIONS. <br><span>AFFORDABLE</span> <br>PRICES.</h2>
+              <a (click)="openForm()" class="theme-btn-s3">Book your Visit</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div> <!-- end container-fluid -->
+  </section>
+
+  
+  <section class="about-section section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col col-xxl-8 offset-xxl-2 col-lg-10 offset-lg-1">
+          <div class="section-title">
+            <h2>Experience Smart Investment</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col col-xl-10 offset-xl-1">
+          <div class="about-details">
+            <p>Samooha wants to build and deliver exceptional quality premium gated communities and enhance the living standards of our customers and made them incredible value in future. Our mission is to become a leading construction company for customers who understand and appreciate quality and service.</p>
+            <p>Our aim is to elevate customer living standards by making our communities lavish and provide state of the art construction methods with designer landscapes ultimately leading to luxury at affordable costs. With a team of highly experienced industry professionals, we always strive to deliver quality in every possible way to make our customers living happy.</p>
+            <a routerLink="/about-us" class="theme-btn">More about us</a>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="row">
+                <div class="col col-xs-12">
+                    <div class="partners-area clearfix">
+                       <div><a href="#"><img src="assets/images/partners/img-1.png" alt=""></a></div>
+                       <div><a href="#"><img src="assets/images/partners/img-2.png" alt=""></a></div>
+                       <div><a href="#"><img src="assets/images/partners/img-3.png" alt=""></a></div>
+                       <div><a href="#"><img src="assets/images/partners/img-4.png" alt=""></a></div>
+                       <div><a href="#"><img src="assets/images/partners/img-5.png" alt=""></a></div>
+                    </div>
+                </div>
+            </div> -->
+    </div> <!-- end container -->
+  </section>
+
+  <!-- start fun-face-info-area -->
+  <section class="services-section section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col col-lg-8">
+          <div class="section-title-s2">
+            <!-- <span>Our services</span> -->
+            <h2>Invest Where It Matters!</h2>
+            <p>Place your bets on the most happening realty in Hyderabad. <br>See yourself amongst our happy investors.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="row">
+        <div class="col col-xs-12">
+          <div class="services-grid clearfix">
+            <div class="grid">
+              <a href="#">
+                <div class="icon"><i class="samooha-icon-location-alt"></i></div>
+                <div class="service-name">
+                  <h5><span>1000+</span> <br>Acres on Development</h5>
+                </div>
+              </a>
+            </div>
+            <div class="grid">
+              <a href="#">
+                <div class="icon"><i class="samooha-icon-sold"></i></div>
+                <div class="service-name">
+                  <h5><span>8000+</span> <br>Plots <br>Sold</h5>
+                </div>
+              </a>
+            </div>
+            <div class="grid">
+              <a href="#">
+                <div class="icon"><i class="samooha-icon-associate"></i></div>
+                <div class="service-name">
+                  <h5><span>1000+</span> <br>Trusted Associates</h5>
+                </div>
+              </a>
+            </div>
+            <div class="grid">
+              <a href="#">
+                <div class="icon"><i class="samooha-icon-family"></i></div>
+                <div class="service-name">
+                  <h5><span>10000+</span> <br>Happy Customers</h5>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </div> <!-- end container -->
+  </section>
+
+  <!-- end fun-face-info-area -->
+
+  <!-- start cta-section-s3 -->
+  <section class="cta-section-s3">
+
+    <div class="container">
+      <div class="row">
+        <div class="col col-xs-12">
+          <div class="cta-content">
+            <h2>Why You Should <br>Choose Samooha?</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="why-samooha">
+            <ul>
+              <li><i class=" samooha-icon-inr"></i> Trusted Properties </li>
+              <li><i class=" samooha-icon-inr"></i> High Return on Investments</li>
+              <li><i class=" samooha-icon-inr"></i> High Growth Property Locations</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="why-samooha">
+            <ul>
+              <li><i class=" samooha-icon-inr"></i> Well Experienced Team</li>
+              <li><i class=" samooha-icon-inr"></i> On time Property Handover</li>
+              <li><i class=" samooha-icon-inr"></i> State-of-the-art Aminities</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="fun-fact">
+        <div>18</div>
+        <div>Years <br>of Excellence</div>
+      </div>
+    </div>
+    <!-- end contaienr -->
+  </section>
+  <!-- end cta-section-s3 -->
+
+
+  <!-- start case-studies-section -->
+  <section class="case-studies-section section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col col-xxl-6 col-lg-7">
+          <div class="section-title-s2">
+            <h2>Explore Our Ventures</h2>
+            <!-- <p>Nelplessly as he looked he thought wasn't a dream is room, another proper human can do this</p> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="case-studies-area case-studies-slider">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="grid">
+              <div class="details">
+                <div class="inner">
+                  <h5><a routerLink="/projects/ongoing-projects/golden-gate">Samooha Golden Gate</a></h5>
+                  <p class="cat">
+                    <!-- <a routerLink="/projects/ongoing-projects/golden-gate">
+                      <i class="samooha-icon-area"></i>
+                      <span><b>Area</b> : 125 acres</span>
+                    </a> -->
+                    <a routerLink="/projects/ongoing-projects/golden-gate">
+                      <i class="samooha-icon-plot"></i>
+                      <span> <b>Plot sizes</b>: 167-200 sq yards</span>
+                    </a>
+                    <a routerLink="/projects/ongoing-projects/golden-gate">
+                      <i class="samooha-icon-location"></i>
+                      <span>Yacharam, Pharma City</span>
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="col-md-6">
+            <div class="grid">
+              <div class="details">
+                <div class="inner">
+
+                  <h5><a routerLink="/projects/ongoing-projects/green-pharma">Samooha Green Pharma One</a></h5>
+                  <p class="cat">
+                    <a routerLink="/projects/ongoing-projects/green-pharma">
+                      <i class="samooha-icon-area"></i>
+                      <span><b>Area</b> : 120 acres</span>
+                    </a>
+                    <a routerLink="/projects/ongoing-projects/green-pharma">
+                      <i class="samooha-icon-plot"></i>
+                      <span> <b>Plot sizes</b>: 167-200 sq yards</span>
+                    </a>
+                    <a routerLink="/projects/ongoing-projects/green-pharma">
+                      <i class="samooha-icon-location"></i>
+                      <span>Nandiwanaparthy</span>
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-6">
+            <div class="grid">
+              <div class="details">
+                <div class="inner">
+
+                  <h5><a routerLink="/projects/ongoing-projects/pharma-valley">Samooha Pharma Valley</a></h5>
+                  <p class="cat">
+                    <a routerLink="/projects/ongoing-projects/pharma-valley">
+                      <i class="samooha-icon-area"></i>
+                      <span><b>Area</b> : 350 acres</span>
+                    </a>
+                    <a routerLink="/projects/ongoing-projects/pharma-valley">
+                      <i class="samooha-icon-plot"></i>
+                      <span> <b>Plot sizes</b>: 167-200 sq yards</span>
+                    </a>
+                    <a routerLink="/projects/ongoing-projects/pharma-valley">
+                      <i class="samooha-icon-location"></i>
+                      <span>Medipally</span>
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="grid">
+              <div class="details">
+                <div class="inner">
+
+                  <h5><a routerLink="/projects/ongoing-projects/pharma-village">Samooha Pharma Village</a></h5>
+                  <p class="cat">
+                    <a routerLink="/projects/ongoing-projects/pharma-village">
+                      <i class="samooha-icon-area"></i>
+                      <span><b>Area</b> : 40 acres</span>
+                    </a>
+                    <a routerLink="/projects/ongoing-projects/pharma-village">
+                      <i class="samooha-icon-plot"></i>
+                      <span> <b>Plot sizes</b>: 167-200 sq yards</span>
+                    </a>
+                    <a routerLink="/projects/ongoing-projects/pharma-village">
+                      <i class="samooha-icon-location"></i>
+                      <span>Medipally</span>
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="grid">
+              <div class="details">
+                <div class="inner">
+
+                  <h5><a routerLink="/projects/ongoing-projects/samooha-vari-sontillu">Samooha Vari Sonthillu</a></h5>
+                  <p class="cat">
+                    <a routerLink="/projects/ongoing-projects/samooha-vari-sontillu">
+                      <i class="samooha-icon-area"></i>
+                      <span><b>Area</b> : 100 acres</span>
+                    </a>
+                    <a routerLink="/projects/ongoing-projects/samooha-vari-sontillu">
+                      <i class="samooha-icon-plot"></i>
+                      <span> <b>Plot sizes</b>: 167-200 sq yards</span>
+                    </a>
+                    <a routerLink="/projects/ongoing-projects/samooha-vari-sontillu">
+                      <i class="samooha-icon-location"></i>
+                      <span>Ibrahimpatnam</span>
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+          <div class="col-md-6">
+            <div class="grid">
+              <div class="details">
+                <div class="inner">
+
+                  <h5><a routerLink="/projects/ongoing-projects/samooha-pharma-avenue">Samooha Pharma Avenue</a></h5>
+                  <p class="cat">
+                    <!-- <a routerLink="/projects/ongoing-projects/samooha-pharma-avenue">
+                      <i class="samooha-icon-area"></i>
+                      <span><b>Area</b> : 10 acres</span>
+                    </a> -->
+                    <a routerLink="/projects/ongoing-projects/samooha-pharma-avenue">
+                      <i class="samooha-icon-plot"></i>
+                      <span> <b>Plot sizes</b>: 167-200 sq yards</span>
+                    </a>
+                    <a routerLink="/projects/ongoing-projects/samooha-pharma-avenue">
+                      <i class="samooha-icon-location"></i>
+                      <span>Nandiwanaparthy, Pharma City</span>
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div> <!-- end container -->
+  </section>
+  <!-- end case-studies-section -->
+
+
+  <!-- start testimonials-section -->
+  <section class="testimonials-section-s2 section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col col-xxl-6 col-lg-7">
+          <div class="section-title-s2">
+            <h2>Customer Reviews</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col col-12">
+          <div class="testimonials-wrap">
+            <div class="testimonials-grid">
+              <swiper #swiperRef [loop]="true" [pagination]="{
+                clickable: true
+              }" [breakpoints]="{
+                '320': {
+                  slidesPerView: 1,
+                  spaceBetween: 20
+                },
+                '640': {
+                  slidesPerView: 1,
+                  spaceBetween: 20
+                },
+                '768': {
+                  slidesPerView: 1,
+                  spaceBetween: 40
+                },
+                '1024': {
+                  slidesPerView: 1,
+                  spaceBetween: 50
+                }
+              }" [navigation]="true" class="mySwiper">
+                <ng-template swiperSlide>
+                  <div class="grid">
+                    <div class="quoter">
+                      <div class="client-pic"><img src="assets/images/testimonials/samooha-testmonials1.png" alt=""></div>
+                    </div>
+                    <p>"Fortunately for us, we found Samooha's Golden Gate. The prices of the plot are reasonable
+                      and we can label them the best developers and best investment choice in Hyderabad. Highly
+                      recommended for the best real estate company in Hyderabad."</p>
+                    <div class="auther">
+                      <h5>- K. Dayanand</h5>
+                      <!-- <p>Nike company person</p> -->
+                    </div>
+                  </div>
+                </ng-template>
+                <ng-template swiperSlide>
+                  <div class="grid">
+                    <div class="quoter">
+                      <div class="client-pic"><img src="assets/images/testimonials/samooha-testmonials2.png" alt=""></div>
+                    </div>
+                    <p>“Samooha's Golden Gate has amazing plots near Pharma City available at fair prices. They are
+                      the best investment options in Hyderabad. They are the best developers in Hyderabad in terms
+                      of location and area surrounded by Pharma City. Will recommend it to all our friends and
+                      family!”</p>
+                    <div class="auther">
+                      <h5>- Gangaiah</h5>
+                      <!-- <p>Nike company person</p> -->
+                    </div>
+                  </div>
+                </ng-template>
+                <ng-template swiperSlide>
+                  <div class="grid">
+                    <div class="quoter">
+                      <div class="client-pic"><img src="assets/images/testimonials/samooha-testmonials3.png" alt=""></div>
+                    </div>
+                    <p>“If you are looking for the best affordable plotting in Hyderabad with great work and
+                      concepts. Samooha's Golden Gate will not disappoint! Pharma City is one of the major
+                      attractions therefore the plots will be more in demand. Samooha had the best plotting
+                      development experience in Hyderabad”</p>
+                    <div class="auther">
+                      <h5>- Syed Mazhar Hussaini</h5>
+                      <!-- <p>Nike company person</p> -->
+                    </div>
+                  </div>
+                </ng-template>
+                <ng-template swiperSlide>
+                  <div class="grid">
+                    <div class="quoter">
+                      <div class="client-pic"><img src="assets/images/testimonials/samooha-testmonials4.png" alt=""></div>
+                    </div>
+                    <p>“Samooha is the best developer in Hyderabad. One can find the finest premier choices for
+                      buying a plot with the best investment options in Hyderabad. The project has residential plots
+                      in varied sizes prompting the best affordable plotting in Hyderabad. It has easy access to the
+                      highway and due to its strategic planning as it is located near Pharma City.”</p>
+                    <div class="auther">
+                      <h5>- V. Srinivas</h5>
+                      <!-- <p>Nike company person</p> -->
+                    </div>
+                  </div>
+                </ng-template>
+                <ng-template swiperSlide>
+                  <div class="grid">
+                    <div class="quoter">
+                      <div class="client-pic"><img src="assets/images/testimonials/samooha-testmonials5.png" alt=""></div>
+                    </div>
+                    <p>“Thank you for my second home in Samooha. The best developers in Hyderabad as the project
+                      comprises villas and plots in various size units that are nestled amidst hundreds of flowering
+                      trees. A life amidst acres of greenery in a pollution-free environment creating a prestigious
+                      class just opposite Pharma City, highway facing project having close proximity to an
+                      international airport. These reasonably priced plots are also a value for money deal. One of
+                      the affordable plots in Hyderabad.”</p>
+                    <div class="auther">
+                      <h5>- Nageshwara Rao</h5>
+                      <!-- <p>Nike company person</p> -->
+                    </div>
+                  </div>
+                </ng-template>
+                <ng-template swiperSlide>
+                  <div class="grid">
+                    <div class="quoter">
+                      <div class="client-pic"><img src="assets/images/testimonials/samooha-testmonials6.png" alt=""></div>
+                    </div>
+                    <p>“Samooha offers the best plotting development in Hyderabad close to Pharma City, an emerging
+                      suburban destination. These plots are situated amidst greenery making it a perfect location
+                      for a lifetime investment and a relaxed place of life. Perhaps, it can be considered an
+                      affordable plotting with the best investment options in Hyderabad. I take this opportunity to
+                      recommend that Samooha Golden Gate is the best real estate company in Hyderabad.”</p>
+                    <div class="auther">
+                      <h5>- K. Bhanu Prakashn</h5>
+                      <!-- <p>Nike company person</p> -->
+                    </div>
+                  </div>
+                </ng-template>
+              </swiper>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- end container -->
+  </section>
+  <!-- end testimonials-section -->
+
+  <!-- start case-studies-section -->
+  <!-- <section class="case-studies-section section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="video-box"> <a href="assets/images/.mp4" data-fancybox="" data-width="640" data-height="360"
+              class="play-btn"><i class="lni lni-play"></i></a>
+              <video src="assets/images/.mp4" autoplay="" [muted]="'muted'" muted="" loop="" playsinline=""></video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+  <!-- end case-studies-section -->
+
+  <!-- start team-section -->
+  <!-- <section class="team-section section-padding">
+        <div class="glass-effect"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col col-xxl-6">
+                    <div class="section-title-s2">
+                        <span>professionals</span>
+                        <h2>our team committed to improving your business</h2>
+                        <p>Nelplessly as he looked he thought wasn't a dream is room, another proper human can do this</p>
+                    </div>
+                </div>
+                <div class="col col-xxl-6">
+
+                    <div class="testimonials-s2-nav">
+                        <div class="slider-s2-arrows">
+                            <div class="slider-prev"><i class="samooha-icon-left"></i></div>
+                            <div class="slider-next"><i class="samooha-icon-right"></i></div>
+                        </div>
+                    </div>
+
+                    <div class="team-slider-holder">
+                        <div class="team-slider">
+                            <div class="team-slider-item">
+                                <div class="grid">
+                                    <div class="img-holder">
+                                        <img src="assets/images/team/img-1.jpg" alt>
+                                    </div>
+                                    <div class="details">
+                                        <h6>Mallikarjun Kurra </h6>
+                                        <p>Managing director</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team-slider-item">
+                                <div class="grid">
+                                    <div class="img-holder">
+                                        <img src="assets/images/team/img-2.jpg" alt>
+                                    </div>
+                                    <div class="details">
+                                        <h6>Chairman</h6>
+                                        <p>N.Anitha </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team-slider-item">
+                                <div class="grid">
+                                    <div class="img-holder">
+                                        <img src="assets/images/team/img-1.jpg" alt>
+                                    </div>
+                                    <div class="details">
+                                        <h6>Tom doggy</h6>
+                                        <p>Business consultar</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </section> -->
+  <!-- end team-section -->
+
+  <ng-template #content let-modal>
+    <div class="modal-header">
+      <p class="modal-title" id="modal-basic-title">Enquery Now</p>
+      <button type="button" class="btn btn-sm btn-outline-dark close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <app-feedback-form></app-feedback-form>
+    </div>
+
+  </ng-template>

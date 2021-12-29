@@ -1,0 +1,184 @@
+/*--------------------------------------------------------------
+	#contact page
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+#4.1	contact-pg-section
+--------------------------------------------------------------*/
+.contact-pg-section {
+
+	.contact-info {
+		@include media-query(991px) {
+			width: 100%;
+			float: none;
+		}
+
+		ul {
+			overflow: hidden;
+			margin: 0 -15px;
+		}
+
+
+		li {
+			width: calc(25% - 30px);
+			float: left;
+			margin: 0 15px 40px;
+			position: relative;
+			padding-left: 75px;
+
+			@include media-query(1199px) {
+				width: calc(50% - 30px);
+			}
+
+			@include media-query(991px) {
+				padding-left: 65px;
+			}
+
+			@include media-query(650px) {
+				width: calc(100% - 30px);
+				float: none;
+			}
+		}
+
+		i {
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+
+		i:before {
+			font-size: 57px;
+			font-size: calc-rem-value(57);
+			color: $text-color;
+
+			@include media-query(991px) {
+				font-size: 50px;
+				font-size: calc-rem-value(50);
+			}
+		}
+
+		h4 {
+			font-size: 17px;
+			font: calc-rem-value(17);
+			font-weight: 400;
+			text-transform: uppercase;
+			margin: 0 0 0.6em;
+
+			@include media-query(767px) {
+				font-size: 16px;
+				font-size: calc-rem-value(16);
+				font-weight: 500;
+			}
+		}
+
+		p {
+			font-size: 15px;
+			font: calc-rem-value(15);
+			font-weight: 300;
+			margin: 0;
+		}
+
+	}
+
+	.contact-area {
+		margin-top: 85px;
+		display: flex;
+		align-items: center;
+
+		@include media-query(991px) {
+			margin-top: 60px;
+		}
+	}
+
+	.contact-form-col {
+		position: relative;
+
+		@include media-query(991px) {
+			margin-top: 60px;
+		}
+
+		h2 {
+			font-size: 60px;
+			font-size: calc-rem-value(60);
+			font-weight: 400;
+			margin: 0 0 0.5em;
+
+			@include media-query(991px) {
+				font-size: 50px;
+				font-size: calc-rem-value(50);
+			}
+
+			@include media-query(767px) {
+				font-size: 40px;
+				font-size: calc-rem-value(40);
+			}
+		}
+
+		form > div + div {
+			margin-top: 15px;
+		}
+
+		input,
+		textarea,
+		select {
+			background-color: #fbfbfb;
+			width: 100%;
+			height: 53px;
+			font-size: 15px;
+			font-size: calc-rem-value(15);
+			font-weight: 300;
+			color: #86868b;
+			padding: 6px 15px;
+			border: 1px solid #eeeeee;
+			color: $text-color;
+
+			&:focus {
+				outline: none;
+			}
+		}
+
+		textarea {
+			height: 180px;
+			padding: 15px;
+		}
+
+		form button {
+			border: 0;
+			outline: 0;
+		}
+
+		.submit-area {
+			width: 100%;
+			margin-bottom: 0;
+		}
+
+		::-webkit-input-placeholder { /* Edge */
+			color: $text-color;
+		}
+
+		:-ms-input-placeholder { /* Internet Explorer 10-11 */
+			color: $text-color;
+		}
+
+		::placeholder {
+			color: $text-color;
+		}
+	}
+
+	.map {
+		@include widther(1400px) {
+			padding-right: 50px;
+		}
+
+		.contact-map {
+		    height: 650px;
+		}
+
+	    iframe {
+		    width: 100%;
+		    height: 100%;
+		    border: 0;
+		    outline: 0;
+		}
+	}
+}
+

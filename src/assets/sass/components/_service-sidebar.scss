@@ -1,0 +1,115 @@
+/****************************************
+	service single sidebar
+****************************************/
+.service-sidebar {
+	@include media-query(1199px) {
+		max-width: 300px;
+		margin-top: 80px;
+	}
+	> .widget + .widget {
+		margin-top: 60px;
+	}
+
+	/*** service-list-widget ***/
+	.service-list-widget {
+		background-color: #f7f7f7;
+		padding: 55px 40px 30px;
+
+		h4 {
+			font-size: 24px;
+			font-size: calc-rem-value(24);
+			margin: 0 0 0.7em;
+		}
+
+		ul {
+			list-style: none;
+			border: 2px solid #f7f7f7;
+			border-bottom: 0;
+		}
+
+		ul li {
+			border-bottom: 1px solid #e0e0e1;
+		}
+
+		a {
+			font-size: 16px;
+			font-size: calc-rem-value(16);
+			font-weight: 300;
+			display: block;
+			color: #0a172b;
+			padding: 12px 0;
+		}
+
+		ul li:last-child {
+			border: 0;
+		}
+
+		li.current a {
+			color: $theme-primary-color;
+		}
+	}
+
+
+	/*** contact-widget ***/
+	.contact-widget {
+		@include background-style("../../images/service-widget-bg.jpg", center center, cover, no-repeat, local);
+		padding: 85px 30px;
+		position: relative;
+		text-align: center;
+
+
+		> div {
+			position: relative;
+			z-index: 1;
+		}
+
+		h4 {
+			font-size: 30px;
+			font-size: calc-rem-value(30);
+			color: $white;
+			margin: 0 0 0.8em;
+			text-transform: capitalize;
+		}
+
+		p {
+			font-size: 16px;
+			font-size: calc-rem-value(16);
+			color: $white;
+			margin: 0;
+		}
+
+		ul li {
+			font-size: 14px;
+			font-size: calc-rem-value(14);
+			position: relative;
+			padding-left: 25px;
+
+			i {
+				position: absolute;
+				left: 0;
+				top: 3px;
+				color: $theme-primary-color;
+			}
+		}
+
+		ul > li + li {
+			margin-top: 12px;
+		}
+
+		a {
+			background-color: $white;
+			font-size: 12px;
+			font-size: calc-rem-value(12);
+			font-weight: 500;
+			color: $text-color;
+			padding: 13px 35px;
+			display: inline-block;
+			margin-top: 15px;
+			text-transform: uppercase;
+		}
+
+		a:hover {
+			color: $theme-primary-color;
+		}
+	}
+}

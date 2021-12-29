@@ -1,0 +1,11 @@
+<IfModule mod_rewrite.c>
+Options Indexes FollowSymLinks
+    Options -Indexes
+    RewriteEngine On
+    RewriteBase /
+    RewriteRule .\.(css|js|jpe?g|png|gif) - [L]
+    RewriteRule ^index\.html$ - [L]
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule . index.html [L]
+</IfModule>

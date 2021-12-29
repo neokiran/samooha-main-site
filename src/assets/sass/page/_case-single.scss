@@ -1,0 +1,208 @@
+/*--------------------------------------------------------------
+	#case-single page
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+#6.1	case-single-section
+--------------------------------------------------------------*/
+.case-single-section {
+	position: relative;
+
+	@include widther(1400px) {
+		top: -60px;
+	}
+
+	.case-single-area {
+		padding: 85px 112px 65px;
+
+		@include media-query(991px) {
+			padding: 85px 0 90px;
+		}
+
+		@include media-query(767px) {
+			padding: 65px 0 90px;
+		}
+
+		@include widther(1400px) {
+			background-color: $white;
+		}
+	}
+
+	.case-info {
+		margin: 0 -15px;
+		border-bottom: 1px solid $black;
+	}
+
+	.case-info > div {
+		width: calc(25% - 30px);
+		float: left;
+		margin: 0 15px 30px;
+
+		@include media-query(991px) {
+			width: calc(50% - 30px);
+			float: left;
+			margin: 0 15px 30px;
+		}
+
+		@include media-query(550px) {
+			width: calc(100% - 30px);
+			float: none;
+			margin: 0 15px 30px;
+		}
+	}
+
+	.case-info span {
+		font-size: 11px;
+		font-size: calc-rem-value(11);
+		font-weight: 500;
+		text-transform: uppercase;
+	}
+
+	.case-info p {
+		font-size: 14px;
+		font-size: calc-rem-value(14);
+		font-weight: 300;
+		margin: 0;
+	}
+
+	h2 {
+		font-size: 60px;
+		font-size: calc-rem-value(60);
+		margin: 1em 0;
+
+		@include media-query(991px) {
+			font-size: 45px;
+			font-size: calc-rem-value(45);
+		}
+
+		@include media-query(767px) {
+			font-size: 32px;
+			font-size: calc-rem-value(32);
+		}
+	}
+
+	.img-holder {
+		margin-bottom: 80px;
+
+		@include media-query(991px) {
+			margin-bottom: 60px;
+		}
+
+		@include media-query(767px) {
+			margin-bottom: 40px;
+		}
+	}
+
+	.case-row {
+		border-bottom: 1px solid $black;
+
+		> .grid:first-child {
+			padding-right: 25px;
+
+			@include media-query(550px) {
+				padding: 0;
+			}
+		}
+
+		> .grid:last-child {
+			padding-left: 25px;
+
+			@include media-query(550px) {
+				padding: 0;
+			}
+		}
+
+		h3 {
+			font-size: 24px;
+			font-size: calc-rem-value(24);
+			margin: 0 0 0.7em;
+
+			@include media-query(991px) {
+				font-size: 22px;
+				font-size: calc-rem-value(22);
+			}
+		}
+
+		p {
+			font-size: 16px;
+			font-size: calc-rem-value(16);
+			font-weight: 300;
+			margin: 0 0 0.5em;
+
+			@include media-query(991px) {
+				font-size: 15px;
+				font-size: calc-rem-value(15);
+			}
+		}
+
+		.grid {
+			width: 50%;
+			float: left;
+			margin: 0 0 50px;
+
+			@include media-query(550px) {
+				width: 100%;
+				float: none;
+			}
+
+			@include media-query(767px) {
+				margin: 0 0 40px;
+			}
+		}
+	}
+
+	.case-row-sec {
+		padding-top: 50px;
+		margin-bottom: 50px;
+	}
+
+	.pagi {
+		margin: 0 -15px;
+
+		> div {
+			width: calc(50% - 30px);
+			float: left;
+			margin: 0 15px;
+
+			@include media-query(550px) {
+				width: calc(100% - 30px);
+				float: none;
+			}
+		}
+
+		span {
+			font-size: 12px;
+			font-size: calc-rem-value(12);
+			font-weight: 500;
+			text-transform: uppercase;
+		}
+
+		h4 {
+			font-size: 24px;
+			font-size: calc-rem-value(24);
+			margin: 0.2em 0 0;
+
+			@include media-query(991px) {
+				font-size: 20px;
+				font-size: calc-rem-value(20);
+			}
+
+			@include media-query(767px) {
+				font-size: 18px;
+				font-size: calc-rem-value(18);
+			}
+		}
+
+		h4 a {
+			color: $heading-color;
+		}
+
+		> div:last-child {
+			text-align: right;
+
+			@include media-query(550px) {
+				text-align: left;
+				margin-top: 45px;
+			}
+		}
+	}
+}
